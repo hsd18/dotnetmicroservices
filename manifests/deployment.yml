@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: dotnetmicroservices 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dotnetmicroservices
+  template:
+    metadata:
+      labels:
+        app: dotnetmicroservices 
+    spec:
+      containers:
+        - name: dotnetmicroservices 
+          image: harpreetregistry.azurecr.io/dotnetmicroservices
+          ports:
+          - containerPort: 80

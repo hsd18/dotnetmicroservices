@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: dotnetmicroservices 
-          image: harpreetregistry.azurecr.io/harpreetsingh18/dotnetmicroservices
+          image: harpreetregistry.azurecr.io/harpreetsingh18/dotnetmicroservices:1593
           imagePullPolicy: Always
           ports:
           - containerPort: 80
